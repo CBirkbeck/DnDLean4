@@ -1,4 +1,4 @@
-import Game.Levels.DemoWorld.tuto2
+import Game.Metadata
 
 World "Logical Statements"
 Level 1
