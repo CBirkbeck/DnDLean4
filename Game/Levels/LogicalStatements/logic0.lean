@@ -1,9 +1,9 @@
-import Game.Levels.DemoWorld
+import Game.Levels.DemoWorld.tuto2
 
 World "Logical Statements"
 Level 1
 
-Title "Apply tactic"
+Title "Combining logical statements"
 
 Introduction
 "
