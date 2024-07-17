@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Jul 17 16:26:28 2024\n"
+"POT-Creation-Date: Wed Jul 17 17:25:20 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -530,7 +530,338 @@ msgid "True and False"
 msgstr ""
 
 #: Game.Levels.TrueAndFalse
-msgid "Lets learn about trus and false!"
+msgid "Lets learn about true and false!"
+msgstr ""
+
+#: Game.Levels.AndOr.constac
+msgid "constructor tactic"
+msgstr ""
+
+#: Game.Levels.AndOr.constac
+msgid "## The `constructor` tactic\n"
+"\n"
+"If your lemma has the goal:\n"
+"\n"
+"```\n"
+"⊢ P ∧ Q\n"
+"```\n"
+"\n"
+"then the  `constructor`  tactic will turn it\n"
+"into *two* goals `⊢ P` and `⊢ Q`.\n"
+"\n"
+"-/\n"
+"\n"
+"/-Hint : Tip\n"
+"It is best practice to indicate when you are working with two goals, either by using dots ·\n"
+"which you get by typing `backslash` followed by `.`\n"
+"brackets like this:\n"
+"\n"
+"```\n"
+"...\n"
+"constructor\n"
+"· working on P\n"
+"· working on Q\n"
+"```"
+msgstr ""
+
+#: Game.Levels.AndOr.constac
+msgid "Let $P,Q$ be logical statements and assume that they are both true, then $P ∧ Q$ is\n"
+"true."
+msgstr ""
+
+#: Game.Levels.AndOr.constac
+msgid ""
+msgstr ""
+
+#: Game.Levels.AndOr.constac2
+msgid "constructor tactic part 2"
+msgstr ""
+
+#: Game.Levels.AndOr.constac2
+msgid "`constructor` can also be used for if and only if statements. For example, if you have `⊢ P ↔ Q` and apply\n"
+"`constructor`, then your goal will change from\n"
+"\n"
+"```\n"
+"⊢ P ↔ Q\n"
+"```\n"
+"to two goals, `⊢ P → Q` and `⊢ Q → P`."
+msgstr ""
+
+#: Game.Levels.AndOr.constac2
+msgid "Let $P$ be a logical statement, then $P$ is true if and only if $P$ is true."
+msgstr ""
+
+#: Game.Levels.AndOr.constac2
+msgid ""
+msgstr ""
+
+#: Game.Levels.AndOr.constac2
+msgid "## The `constructor` tactic\n"
+"\n"
+"If your lemma has the goal:\n"
+"\n"
+"```\n"
+"⊢ P ∧ Q\n"
+"```\n"
+"\n"
+"then the  `constructor`  tactic will turn it\n"
+"into *two* goals `⊢ P` and `⊢ Q`.\n"
+"\n"
+"Moreover, if you have an iff `P ↔ Q` then splitting it will give you two goals, `P → Q`\n"
+"(i.e \"`P` only if `Q`\") and `P ← Q ` (i.e \"`P` if `Q`\") to prove."
+msgstr ""
+
+#: Game.Levels.AndOr.lr
+msgid "left and right"
+msgstr ""
+
+#: Game.Levels.AndOr.lr
+msgid "## `left` and `right`\n"
+"\n"
+"If your lemma has the goal:\n"
+"\n"
+"```\n"
+"⊢ P ∨ Q\n"
+"```\n"
+"\n"
+"then   `left`  changes the goal to `⊢ P`.\n"
+"Similarly, `right`  changes the goal to `⊢ Q`.\n"
+"-/\n"
+"\n"
+"/-Hint : Why does this work?\n"
+"The logic is that `P` implies `P ∨ Q` so it is enough to prove `P`."
+msgstr ""
+
+#: Game.Levels.AndOr.lr
+msgid "Let $P,Q$ be logical statements and assume $P$ is true, then $P ∨ Q$ is true."
+msgstr ""
+
+#: Game.Levels.AndOr.lr
+msgid ""
+msgstr ""
+
+#: Game.Levels.AndOr.lr
+msgid "## The `left` tactic\n"
+"If your lemma has the goal:\n"
+"\n"
+"```\n"
+"⊢ P ∨ Q\n"
+"```\n"
+"\n"
+"then   `left`  changes the goal to `⊢ P`."
+msgstr ""
+
+#: Game.Levels.AndOr.lr
+msgid "## The `right` tactic\n"
+"If your lemma has the goal:\n"
+"\n"
+"```\n"
+"⊢ P ∨ Q\n"
+"```\n"
+"\n"
+"then   `right`  changes the goal to `⊢ Q`."
+msgstr ""
+
+#: Game.Levels.AndOr.casestac
+msgid "rcases tactic"
+msgstr ""
+
+#: Game.Levels.AndOr.casestac
+msgid "## The `rcases` tactic\n"
+"\n"
+"`cases` is a very general-purpose tactic for deconstructing hypotheses.\n"
+"If `h` is an assumption which somehow bundles up two pieces of information,\n"
+"then  `rcases h with ⟨h1, h2⟩` (to get ⟨ or ⟩ use backslash < or backslash >)  will make the\n"
+"assumption `h` vanish and will replace it with the two components which made the proof of `h` in the first place.\n"
+"An example of this occurring is if you have the assumption `h : P ∧ Q` which contains a\n"
+"proof of `P` and a proof of `Q`.\n"
+"\n"
+"\n"
+"\n"
+"For example, if you have an assumption\n"
+"\n"
+"```\n"
+"h : P ∧ Q\n"
+"```\n"
+"\n"
+"then\n"
+"\n"
+"`rcases h with ⟨hP hQ⟩ `\n"
+"\n"
+"will delete `h` and replace it with\n"
+"\n"
+"```\n"
+"hP : P\n"
+"hQ : Q\n"
+"```\n"
+"Try it out below."
+msgstr ""
+
+#: Game.Levels.AndOr.casestac
+msgid "If $P,Q$ are logical statements and $P ∧ Q$ is true then so is $P$."
+msgstr ""
+
+#: Game.Levels.AndOr.casestac
+msgid ""
+msgstr ""
+
+#: Game.Levels.AndOr.casestac
+msgid "## The `rcases` tactic\n"
+"if you have an assumption\n"
+"\n"
+"```\n"
+"h : P ∧ Q\n"
+"```\n"
+"\n"
+"then\n"
+"\n"
+"`rcases h with ⟨hP hQ⟩ `\n"
+"\n"
+"will delete `h` and replace it with\n"
+"\n"
+"```\n"
+"hP : P\n"
+"hQ : Q\n"
+"```\n"
+"\n"
+"You can also use `rcases` when working with the `∨` (or) connective. For example, if you have\n"
+"the assumption\n"
+"\n"
+"```\n"
+"h : P ∨ Q\n"
+"```\n"
+"\n"
+"then `rcases h with hp | hq` will convert your state into the following two states:\n"
+"\n"
+"```\n"
+"P : Prop\n"
+"hp : P\n"
+"⊢ P\n"
+"```\n"
+"and\n"
+"\n"
+"```\n"
+"P : Prop\n"
+"hq : Q\n"
+"⊢ Q\n"
+"```\n"
+"one where `P` is true and one where `Q` is true."
+msgstr ""
+
+#: Game.Levels.AndOr.casestac2
+msgid "rcases tactic part 2"
+msgstr ""
+
+#: Game.Levels.AndOr.casestac2
+msgid "You can also use `rcases` when working with the `∨` (or) connective. For example, if you have\n"
+"the assumption\n"
+"\n"
+"```\n"
+"h : P ∨ Q\n"
+"```\n"
+"\n"
+"then `rcases h with hp | hq` will convert your state into the following two states:\n"
+"\n"
+"```\n"
+"P : Prop\n"
+"hp : P\n"
+"⊢ P\n"
+"```\n"
+"and\n"
+"\n"
+"```\n"
+"P : Prop\n"
+"hq : Q\n"
+"⊢ Q\n"
+"```\n"
+"one where `P` is true and one where `Q` is true.\n"
+"\n"
+"Try this in the lemma below."
+msgstr ""
+
+#: Game.Levels.AndOr.casestac2
+msgid "If $P$ is a logical statement and $P$ or $P$ is true, then $P$ is true."
+msgstr ""
+
+#: Game.Levels.AndOr.casestac2
+msgid ""
+msgstr ""
+
+#: Game.Levels.AndOr.casestac2
+msgid "## The `rcases` tactic\n"
+"if you have an assumption\n"
+"\n"
+"```\n"
+"h : P ∧ Q\n"
+"```\n"
+"\n"
+"then\n"
+"\n"
+"`rcases h with ⟨hP hQ⟩ `\n"
+"\n"
+"will delete `h` and replace it with\n"
+"\n"
+"```\n"
+"hP : P\n"
+"hQ : Q\n"
+"```"
+msgstr ""
+
+#: Game.Levels.AndOr.logicalandeasy
+msgid "and is commutative"
+msgstr ""
+
+#: Game.Levels.AndOr.logicalandeasy
+msgid ""
+msgstr ""
+
+#: Game.Levels.AndOr.logicalandeasy
+msgid "Let $P,Q$ be logical statements, then $P ∧ Q$ is true iff $Q ∧ P$ is true."
+msgstr ""
+
+#: Game.Levels.AndOr.logicalandeasy
+msgid ""
+msgstr ""
+
+#: Game.Levels.AndOr.logicalandeasy2
+msgid "and is commutative"
+msgstr ""
+
+#: Game.Levels.AndOr.logicalandeasy2
+msgid ""
+msgstr ""
+
+#: Game.Levels.AndOr.logicalandeasy2
+msgid "If $P,Q,R$ are logical statements then $P ∧ Q$ implies that\n"
+"$(P \\implies R) \\implies (Q \\implies R) \\implies R$"
+msgstr ""
+
+#: Game.Levels.AndOr.logicalandeasy2
+msgid ""
+msgstr ""
+
+#: Game.Levels.AndOr.logicalandeasy3
+msgid "and is transitive"
+msgstr ""
+
+#: Game.Levels.AndOr.logicalandeasy3
+msgid "This level will show that `∧` is *transitive*."
+msgstr ""
+
+#: Game.Levels.AndOr.logicalandeasy3
+msgid "If $P,Q,R$ are logical statements, then $P ∧ Q$ and $Q ∧ R$ imples $P ∧ R$."
+msgstr ""
+
+#: Game.Levels.AndOr.logicalandeasy3
+msgid ""
+msgstr ""
+
+#: Game.Levels.AndOr
+msgid "And & Or"
+msgstr ""
+
+#: Game.Levels.AndOr
+msgid "Lets learn about And and Or."
 msgstr ""
 
 #: Game
