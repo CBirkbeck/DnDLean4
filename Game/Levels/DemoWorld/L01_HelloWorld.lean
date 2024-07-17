@@ -5,7 +5,8 @@ Level 1
 
 Title "Hello World"
 
-Introduction "
+Introduction
+"
 #Logical statements
 
 In Logic, a *statement* is a sentence that is either true of false, for example:
@@ -65,9 +66,11 @@ prove `P`, then typing <mark style ="background-color :   #ebdef0 ">`exact p`</m
 
 **Note:  We end each line with a comma `,` to tell Lean that this is the end of our move.**
 
-Try it for yourself now and see what happens!"
+Try it for yourself now and see what happens!
 
-Statement example_one (P : Prop) (p : P) : P :=
+"
+
+Statement example_one (P : Prop) (p : P) : P := by
   Hint "write exact p"
   exact p
 
