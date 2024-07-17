@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Jul 17 17:25:20 2024\n"
+"POT-Creation-Date: Wed Jul 17 17:25:36 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -862,6 +862,110 @@ msgstr ""
 
 #: Game.Levels.AndOr
 msgid "Lets learn about And and Or."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands
+msgid "First absorption law"
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands
+msgid "This level proves the first *absorption* law."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands
+msgid "If $P,Q$ are logical statements then $P ∧ (P ∨ Q)$ is true if and only if $P$ is true."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands
+msgid ""
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands2
+msgid "Second absorption law"
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands2
+msgid "This level proves the second absorption law."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands2
+msgid "If $P,Q$ are logical statements then $P ∨ (P ∧ Q)$ is true if and only if $P$ is true."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands2
+msgid ""
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands3
+msgid "Associative laws pt 1"
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands3
+msgid "This level proves that `∧` is *associative*."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands3
+msgid "If $P,Q,R$ are logical statements, then $P ∧ (Q ∧ R)$ is true iff $(P ∧ Q) ∧ R$ is true."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands3
+msgid ""
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands4
+msgid "Associative laws pt 2"
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands4
+msgid "This level proves that `∨` is associative."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands4
+msgid "If $P,Q,R$ are logical statements then $P ∨ (Q ∨ R)$ is true iff $(P ∨ Q) ∨ R$ is true."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands4
+msgid ""
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands5
+msgid "Distributive laws 1"
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands5
+msgid "This level proves the *distributivity* of `∧` over `∨`."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands5
+msgid "If $P,Q,R$ are logical statements then $P ∧ (Q ∨ R)$ is true iff $(P ∧ Q) ∨ (P ∧ R)$ is true."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands5
+msgid ""
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands6
+msgid "Distributive laws 2"
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands6
+msgid "This level proves the distributivity of `∨` over `∧`."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands6
+msgid "If $P,Q,R$ are logical statements then $P ∨ (Q ∧ R)$ is true iff $(P ∨ Q) ∧ (P ∨ R)$ is true."
+msgstr ""
+
+#: Game.Levels.LogicLaws.logicalands6
+msgid ""
+msgstr ""
+
+#: Game.Levels.LogicLaws
+msgid "Logic Laws"
+msgstr ""
+
+#: Game.Levels.LogicLaws
+msgid "Lets learn about some laws of logic."
 msgstr ""
 
 #: Game

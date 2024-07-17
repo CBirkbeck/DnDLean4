@@ -72,7 +72,7 @@ hP : P
 
 Tip : `intro` can also be used to introduce
 more than one assumption at once. Don't forget
-to name your hypotheses, e.g. `intros hP hQ` if your goal is `P → Q → R`.
+to name your hypotheses, e.g. `intro hP hQ` if your goal is `P → Q → R`.
 -/
 TacticDoc intro
 

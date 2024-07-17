@@ -14,7 +14,7 @@ This is called `Modus Ponens` by logicians.
 
 /--If $P$ is true and $P \implies Q$ is true, then $Q$ is true. -/
 Statement Modus_Ponens (P Q : Prop) : P → (P → Q) → Q := by
-  intros hP hPQ
+  intro hP hPQ
   apply hPQ
   exact hP
 
