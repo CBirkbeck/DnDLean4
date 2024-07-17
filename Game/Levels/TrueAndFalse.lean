@@ -4,5 +4,5 @@ World "TrueAndFalse"
 Title "True and False"
 
 Introduction "
-Lets learn about trus and false!
+Lets learn about true and false!
 "
