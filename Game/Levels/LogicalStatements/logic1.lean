@@ -1,3 +1,4 @@
+import Game.Metadata
 import Game.Levels.DemoWorld
 
 World "LogicalStatements"
