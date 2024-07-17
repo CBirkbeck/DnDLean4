@@ -3,7 +3,7 @@ import Game.Metadata
 World "Tutorial"
 Level 1
 
-Title "Hello World"
+Title "Tutorial World 1"
 
 Introduction
 "
@@ -81,3 +81,20 @@ Conclusion "Yay!"
 NewTactic exact
 -- NewTheorem Nat.add_comm Nat.add_assoc
 -- NewDefinition Nat Add Eq
+
+/--
+## Summary
+If the goal is `⊢ P` then `exact p,` will close the goal if
+and only if `p` is a proof of `P` (i.e. `p : P`)
+## Details
+Say $P$, $Q$ and $R$ are logical staments
+and your lemma looks like this:
+```
+p : P,
+h : P → Q,
+j : Q → R
+⊢ R
+```
+Then you can solve the level by using `exact j(h(p)),`
+-/
+TacticDoc exact
