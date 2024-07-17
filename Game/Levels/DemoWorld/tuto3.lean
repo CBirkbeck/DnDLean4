@@ -40,10 +40,9 @@ a proof of `Q`.**
 
 "
 
-Statement
-"Let $P,Q$ be logical statements and $P$ implies $Q$. If $P$ is true, then so is $Q$."
-  (P Q : Prop) (h : P → Q) (p : P) : Q := by
-  exact h(p)
+/--Let $P,Q$ be logical statements and $P$ implies $Q$. If $P$ is true, then so is $Q$.-/
+Statement (P Q : Prop) (h : P → Q) (p : P) : Q := by
+  exact h p
 
 
 Conclusion " "

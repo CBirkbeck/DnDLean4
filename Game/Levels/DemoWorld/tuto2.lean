@@ -11,9 +11,8 @@ Introduction
 test
 "
 
-
-Statement
-"If $P,Q$ are logical statements with respective proofs $p,q$, then $Q$ is true."
+/--"If $P,Q$ are logical statements with respective proofs $p,q$, then $Q$ is true. " -/
+Statement example_one
  (P Q : Prop) (p : P) (q : Q) : Q := by
   exact q
 
@@ -23,7 +22,3 @@ Conclusion " "
 
 -- NewTheorem Nat.add_comm Nat.add_assoc
 -- NewDefinition Nat Add Eq
-
-/--
-If $P,Q$ are logical statements with respective proofs $p,q$, then $Q$ is true.
--/
