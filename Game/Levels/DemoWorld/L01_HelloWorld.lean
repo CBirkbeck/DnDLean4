@@ -7,7 +7,7 @@ Title "Hello World"
 
 Introduction
 "
-#Logical statements
+# Logical statements
 
 In Logic, a *statement* is a sentence that is either true of false, for example:
 
@@ -24,7 +24,7 @@ place called `Prop` (which is short for Propositions). For example, if we write 
 we mean `P` is a logical statement.  Think of the `:` symbol as saying `P` lives in `Prop`
 (in Maths this would be denoted by `P ∈ Prop`, to mean `P` is an element of `Prop`).
 
-#Truth Values
+# Truth Values
 
 The *truth value* of a logical statement (i.e. some `P : Prop` is whether the statement is true or
 false). For example, the truth value of the statement: For all integers $$x ∈ ℤ$$, $$0 ≤ x^2$$
@@ -48,8 +48,8 @@ This is where the window on the right will come into play. If you delete the *so
 on the right you will see the following state:
 
 ```
-P : Prop,
-p : P,
+P : Prop
+p : P
 ⊢ P
 ```
 
@@ -78,6 +78,6 @@ Conclusion "Yay!"
 
 /- Use these commands to add items to the game's inventory. -/
 
-NewTactic rw rfl
+NewTactic exact
 -- NewTheorem Nat.add_comm Nat.add_assoc
 -- NewDefinition Nat Add Eq
