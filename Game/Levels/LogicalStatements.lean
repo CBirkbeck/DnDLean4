@@ -1,5 +1,4 @@
-import Game.Levels.LogicalStatements.logic_pt2.lean
-
+import Game.Levels.LogicalStatements.logic_pt2
 
 World "Logical Statements"
 Title "Logical Statements"
