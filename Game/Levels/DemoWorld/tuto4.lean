@@ -18,7 +18,7 @@ is $R$."
   exact h2 (h1 (p))
 
 
-Conclusion "Yay!"
+Conclusion " You've now finished the tutorial! You can now play the game. "
 
 /- Use these commands to add items to the game's inventory. -/
 

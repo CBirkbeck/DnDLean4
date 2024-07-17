@@ -30,12 +30,12 @@ statement `Q` in `Prop`. In Maths, we would call `h` a function or a map.
 
 Finally, our goal is to prove `Q` is true.
 
-Using `exact h(p)`will prove our lemma.
+Using `exact h p`will prove our lemma.
 
 Why does this work? We know that `P` is true, since we have a proof of it `p` and `h` tells us that
 if `P` is true then `Q` is true. So combining `h` and `p` results in a proof of `Q`.
 
-**Note: We use `h(p)` rather than `h(P)`, because we want to transform the proof of `P` into
+**Note: We use `h p` rather than `h P`, because we want to transform the proof of `P` into
 a proof of `Q`.**
 
 "
@@ -46,7 +46,7 @@ Statement
   exact h(p)
 
 
-Conclusion "Yay!"
+Conclusion " "
 
 /- Use these commands to add items to the game's inventory. -/
 

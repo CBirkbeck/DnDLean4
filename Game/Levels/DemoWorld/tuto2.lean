@@ -17,7 +17,7 @@ Statement
  (P Q : Prop) (p : P) (q : Q) : Q := by
   exact q
 
-Conclusion "Yay!"
+Conclusion " "
 
 /- Use these commands to add items to the game's inventory. -/
 
