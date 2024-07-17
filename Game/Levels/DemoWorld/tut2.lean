@@ -12,16 +12,19 @@ test
 "
 
 
-/-Lemma
-If $P,Q$ are logical statements with respective proofs $p,q$, then $Q$ is true.
--/
-Statement example_two (P Q : Prop) (p : P) (q : Q) : Q := by
+Statement
+"If $P,Q$ are logical statements with respective proofs $p,q$, then $Q$ is true."
+ example_two (P Q : Prop) (p : P) (q : Q) : Q := by
   exact q
 
 Conclusion "Yay!"
 
 /- Use these commands to add items to the game's inventory. -/
-
-NewTactic exact
+NewTheorem example_two
 -- NewTheorem Nat.add_comm Nat.add_assoc
 -- NewDefinition Nat Add Eq
+
+/--
+If $P,Q$ are logical statements with respective proofs $p,q$, then $Q$ is true.
+-/
+TheoremDoc example_two

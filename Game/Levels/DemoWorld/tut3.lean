@@ -40,10 +40,9 @@ a proof of `Q`.**
 
 "
 
-/-
-Let $P,Q$ be logical statements and $P$ implies $Q$. If $P$ is true, then so is $Q$.
--/
-Statement implications_one (P Q : Prop) (h : P → Q) (p : P) : Q := by
+Statement
+"Let $P,Q$ be logical statements and $P$ implies $Q$. If $P$ is true, then so is $Q$."
+  implications_one (P Q : Prop) (h : P → Q) (p : P) : Q := by
   exact h(p)
 
 
@@ -51,6 +50,6 @@ Conclusion "Yay!"
 
 /- Use these commands to add items to the game's inventory. -/
 
-NewTactic exact
+NewTheorem implications_one
 -- NewTheorem Nat.add_comm Nat.add_assoc
 -- NewDefinition Nat Add Eq
