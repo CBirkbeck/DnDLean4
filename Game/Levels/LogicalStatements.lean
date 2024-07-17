@@ -1,4 +1,4 @@
-import Game.Levels.LogicalStatements.logic2
+import Game.Levels.LogicalStatements.logic7
 
 World "LogicalStatements"
 Title "Logic"
