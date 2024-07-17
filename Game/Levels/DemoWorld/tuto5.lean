@@ -35,7 +35,8 @@ Here's an example we have already done, but try and do it using the `apply` tact
 
 /--Let $P,Q$ be logical statements and $P$ implies $Q$. If $P$ is true, then so is $Q$.-/
 Statement (P Q : Prop) (h : P → Q) (p : P) : Q := by
-  exa
+  apply h
+  exact p
 
 
 
