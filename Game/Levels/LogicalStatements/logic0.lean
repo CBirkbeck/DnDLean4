@@ -35,7 +35,8 @@ Here's an example we have already done, but try and do it using the `apply` tact
 
 /--Let $P,Q$ be logical statements and $P$ implies $Q$. If $P$ is true, then so is $Q$.-/
 Statement (P Q : Prop) (h : P → Q) (p : P) : Q := by
-  exact h p
+  apply h
+  exact p
 
 
 
@@ -47,27 +48,3 @@ Conclusion "Yay!"
 
 -- NewTheorem Nat.add_comm Nat.add_assoc
 -- NewDefinition Nat Add Eq
-
-/--
-## The `apply` tactic
-
-If your lemma looks like
-
-```
-h : P → Q
-⊢ Q
-```
-
-then the tactic `apply h,` will change it to
-
-```
-h : P → Q
-⊢ P
-```
-
-The `apply` tactic is useful for *arguing backwards*. It reduces the goal to a potentially easier
-goal, without changing any hypotheses.
--/
-TacticDoc apply
-
-NewTactic apply
