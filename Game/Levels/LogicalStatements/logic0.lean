@@ -1,9 +1,9 @@
 import Game.Levels.DemoWorld.tuto4
 
-World "Tutorial"
+World "Logical Statements"
 Level 1
 
-Title "Tutorial World 1"
+Title "Apply tactic"
 
 Introduction
 "
