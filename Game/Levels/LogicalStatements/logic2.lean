@@ -1,4 +1,4 @@
-import Game.Levels.logic1
+import Game.Levels.LogicalStatements.logic1
 
 World "Logical Statements"
 Level 2
