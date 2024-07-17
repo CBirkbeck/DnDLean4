@@ -1,7 +1,7 @@
 import Game.Levels.DemoWorld.tuto2
 
-World "Tutorial"
-Level 3
+World "LogicalStatements"
+Level 1
 
 Title "Combining logical statements"
 
