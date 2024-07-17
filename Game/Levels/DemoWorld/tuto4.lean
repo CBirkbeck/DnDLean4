@@ -1,4 +1,4 @@
-import Game.Metadata
+import Game.Levels.DemoWorld.tuto3
 
 World "Tutorial"
 Level 4
