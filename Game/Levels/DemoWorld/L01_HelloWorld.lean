@@ -20,8 +20,8 @@ In Logic, a *statement* is a sentence that is either true of false, for example:
 
 One of the goals of this game is to show you how to work with logical statements on a computer,
 specifically using a computer language called Lean. In Lean, logical staments live in a
-place called `Prop` (which is short for "Propositions"). For example, if we write  `P : Prop`
-we mean "`P` is a logical statement."  Think of the `:` symbol as saying `P` lives in `Prop`
+place called `Prop` (which is short for Propositions). For example, if we write  `P : Prop`
+we mean `P` is a logical statement.  Think of the `:` symbol as saying `P` lives in `Prop`
 (in Maths this would be denoted by `P ∈ Prop`, to mean `P` is an element of `Prop`).
 
 #Truth Values
@@ -58,7 +58,7 @@ logical statement and the second line `p : P` says `p` is the proof of `P`.
 
 The thing after the `⊢` symbol is what we need to prove to win the level (i.e. prove the lemma).
 
-In this game our "moves" or, as we call them in Lean, *tactics*, are what will allow us to
+In this game our moves or, as we call them in Lean, *tactics*, are what will allow us to
 manipulate our statements and produce proofs.
 
 The first tactic we will use is called *exact*. It is used when you need to prove a
