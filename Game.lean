@@ -1,4 +1,5 @@
 import Game.Levels.DemoWorld
+import Game.Levels.LogicalStatements
 
 -- Here's what we'll put on the title screen
 Title "Dungeons and De Morgan's: The logic Game"
