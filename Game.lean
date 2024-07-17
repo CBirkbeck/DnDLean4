@@ -3,6 +3,7 @@ import Game.Levels.LogicalStatements
 import Game.Levels.TrueAndFalse
 import Game.Levels.AndOr
 import Game.Levels.LogicLaws
+import Game.Levels.NotLogic
 
 -- Here's what we'll put on the title screen
 Title "Dungeons and De Morgan's: The logic Game"
@@ -26,6 +27,13 @@ Have fun!
 "
 
 Info "
+
+# Credits
+
+Some levels have been shamelessly borrowed from Kevin Buzzard's and Mohammad Pedramfar's
+Natural Numbers Game
+as well  as Kevin Buzzard's Formalising mathematics
+course at Imperial College London.
 
 "
 

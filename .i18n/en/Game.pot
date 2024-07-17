@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Jul 17 17:25:36 2024\n"
+"POT-Creation-Date: Wed Jul 17 18:18:29 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -312,7 +312,7 @@ msgid "## The `intro` tactic.\n"
 "\n"
 "Tip : `intro` can also be used to introduce\n"
 "more than one assumption at once. Don't forget\n"
-"to name your hypotheses, e.g. `intros hP hQ` if your goal is `P → Q → R`."
+"to name your hypotheses, e.g. `intro hP hQ` if your goal is `P → Q → R`."
 msgstr ""
 
 #: Game.Levels.LogicalStatements.logic3
@@ -968,6 +968,298 @@ msgstr ""
 msgid "Lets learn about some laws of logic."
 msgstr ""
 
+#: Game.Levels.NotLogic.notlogic
+msgid "contrapositive"
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic
+msgid "By definition `¬Q` is equivalent to `Q → false`. Lets call this result\n"
+"\n"
+"`not_iff_imp_false (P : Prop) : ¬ P ↔ (P → false)`\n"
+"\n"
+"\n"
+"You can convince yourself this is true by writting out the truth table for `¬ P` and `P → false`.\n"
+"\n"
+"\n"
+"In order to use it, lets look at a new tactic.\n"
+"\n"
+"## The `rw` tactic\n"
+"\n"
+"The `rw`tactic (short for `rewrite`)\n"
+"is a tactic that allows you to do a substitution. For example, if we have the\n"
+"assumption `h : P ↔ Q`, then `rw [h]` will replace the (first) `P` in the goal with `Q`. If instead you would like to\n"
+"turn the first `Q` in your goal to `P` then use `rw [←h]`. (To get the `←` arrow, type `backslash l`).\n"
+"\n"
+"Combining `rw` and `not_iff_imp_false` (dont forget the []), try to prove the following:"
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic
+msgid "If $P$ and $Q$ are propositions, and $P\\implies Q$, then\n"
+"$\\lnot Q\\implies \\lnot P$."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic
+msgid "Start by using `rw [not_iff_imp_false]` and see what changes."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic
+msgid "Tip\n"
+"If you want to use the `rw` tactic on one of your assumptions then this can be done.\n"
+"\n"
+"For example, if we have `h1 : P ↔ Q` and `h2` is the assumption we want to change, then\n"
+" `rw [h1] at h2` will substitute the first `P` in `h2` to `Q`."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic
+msgid "# The `rw` tactic\n"
+"\n"
+"The `rw`tactic (short for `rewrite`)\n"
+"is a tactic that allows you to do a substitution. For example, if we have the\n"
+"assumption `h : P ↔ Q`, then `rw [h]` will replace the (first) `P` in the goal with `Q`. If instead you would like to\n"
+"turn the first `Q` in your goal to `P` then use `rw [←h]`. (To get the `←` arrow, type `backslash l`)."
+msgstr ""
+
+#: Game.Levels.NotLogic.tf6
+msgid "The `exfalso` tactic."
+msgstr ""
+
+#: Game.Levels.NotLogic.tf6
+msgid "In this level we want to prove prove that `false` implies any proposition `P`."
+msgstr ""
+
+#: Game.Levels.NotLogic.tf6
+msgid "If $P$ is a logical statement then $\\mathrm{false}$ implies $P$."
+msgstr ""
+
+#: Game.Levels.NotLogic.tf6
+msgid "# What is going on here?\n"
+"\n"
+"One way to solve this level is to use `intro h` followed by `rcases h`.  Notice that using `intro h`,\n"
+"introduces the assumption `h : false`. Lean thinks of `false` as empty, i.e having no elements.\n"
+"`rcases h` goes through each element in `h` and tries to prove our goal.\n"
+"But since our assumption is `false` there are no cases, so the result is trivially true.\n"
+"To make sense of this outside of Lean, we think that starting from a false statement we can have\n"
+"any outcome, both true and false (see levels 3 & 4 of True and False world).\n"
+"\n"
+"## The `exfalso` tactic\n"
+"\n"
+"A way to use this result in Lean is with the `exfalso` tactic,\n"
+"which changes any goal to `false`."
+msgstr ""
+
+#: Game.Levels.NotLogic.tf6
+msgid "## The `exfalso` tactic\n"
+"\n"
+"A way to use this result in Lean is with the <mark style =\"background-color : #ebdef0 \"> `exfalso`</mark> tactic,\n"
+"which changes any goal to `false`."
+msgstr ""
+
+#: Game.Levels.NotLogic.pnotpfalse
+msgid "P not P is false"
+msgstr ""
+
+#: Game.Levels.NotLogic.pnotpfalse
+msgid "In this level we will prove that `P ∧ ¬ P` is always false. This is an example of a *contradiction*."
+msgstr ""
+
+#: Game.Levels.NotLogic.pnotpfalse
+msgid "If $P$ is a logical statement, then $P ∧ ¬P$ is false."
+msgstr ""
+
+#: Game.Levels.NotLogic.pnotpfalse
+msgid ""
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic1
+msgid "Proof by contradiction."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic1
+msgid "##  Proof by contradiction.\n"
+"\n"
+"In this level we will see why proofs by contradiction are valid. The key is to note that for any\n"
+"logical statements `P,Q`, we have that ` P ∧ (¬ P) → Q` is true.\n"
+"\n"
+"-/\n"
+"\n"
+"/-Hint : Why is this true?\n"
+"We have just seen that `P ∧ (¬ P)`is always false and `false → Q` is always true.\n"
+"-/"
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic1
+msgid "If $P$ and $Q$ are logical statements, then\n"
+"$(P\\land(\\lnot P))\\implies Q.$"
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic1
+msgid "Start by introducing your assumption and then using `exfalso`."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic1
+msgid "If you want to use to use this result later on then you can type `apply (contra P Q)`where `P,Q` are\n"
+"the assumptions you want to use. You can also use the tactic `by_contra`\n"
+"to achieve similar results."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic2
+msgid "Proof by contradiction."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic2
+msgid "We proved earlier that `(P → Q) → (¬ Q → ¬ P)`. The converse,\n"
+"that `(¬ Q → ¬ P) → (P → Q)` is certainly true, but trying to prove\n"
+"it using the tactics we've learnt so far is impossible.\n"
+"\n"
+"# Why is this impossible?\n"
+"\n"
+"Suppose we tried to prove this with the tactics we have seen so far, then our proof might look\n"
+"something like:\n"
+"```\n"
+"intro h\n"
+"intro p\n"
+"rw [not_iff_imp_false] at h\n"
+"rw [not_iff_imp_false] at h\n"
+"```\n"
+"You are then left with the following state:\n"
+"```\n"
+"P Q : Prop\n"
+"h : (Q → false) → P → false\n"
+"p : P\n"
+"⊢ Q\n"
+"```\n"
+"and now we are stuck. In fact, using tactics such as `intro` and `apply` you will never be able to\n"
+"prove this lemma as this is not provable in constructive logic. The key in proving this is to use\n"
+"Lean's version of a truth table!\n"
+"\n"
+"In order to continue we need a new tactic.\n"
+"\n"
+"## The `by_cases` tactic\n"
+"\n"
+"The tactic `by_cases` allows us to create Lean's\n"
+"version of a truth table.\n"
+"\n"
+"For example, if you have `P Q : Prop`, then `by_cases hp : P; by_cases hq : Q,`\n"
+"will create four goals, one for each of the four  possibilities for `P,Q`, i.e.,\n"
+"\n"
+"```md\n"
+"| `P`     | `Q`     |\n"
+"| --------|---------|\n"
+"| `true`  | `true`  |\n"
+"| `true`  | `false` |\n"
+"| `false` | `true`  |\n"
+"| `false` | `false` |\n"
+"```\n"
+"\n"
+"**Note the semicolon**! It means do the next tactic to all the goals, not just the first."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic2
+msgid "If $P$ and $Q$ are logical statements, then\n"
+"$(\\lnot Q\\implies \\lnot P)\\implies(P\\implies Q).$"
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic2
+msgid ""
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic2
+msgid "## The `by_cases` tactic\n"
+"\n"
+"The tactic `by_cases` allows us to create Lean's\n"
+"version of a truth table.\n"
+"\n"
+"For example, if you have `P Q : Prop`, then `by_cases hp : P; by_cases hq : Q,`\n"
+"will create four goals, one for each of the four  possibilities for `P,Q`, i.e.,\n"
+"\n"
+"```md\n"
+"| `P`     | `Q`     |\n"
+"| --------|---------|\n"
+"| `true`  | `true`  |\n"
+"| `true`  | `false` |\n"
+"| `false` | `true`  |\n"
+"| `false` | `false` |\n"
+"```\n"
+"\n"
+"**Note the semicolon**! It means do the next tactic to all the goals, not just the first."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogiccb
+msgid "more not logic"
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogiccb
+msgid ""
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogiccb
+msgid "If $P$ is a logical statement then $P \\implies ¬P$ implies $\\mathrm{false}$."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogiccb
+msgid ""
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogiccb2
+msgid "even more not logic"
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogiccb2
+msgid ""
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogiccb2
+msgid "If $P$ is a logical statement then $P \\implies ¬ ¬P$."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogiccb2
+msgid "Try using `rw [not_iff_imp_false]`."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogiccb2
+msgid ""
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic3
+msgid "even more not logic"
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic3
+msgid ""
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic3
+msgid "If $P$ is a logical statement then $¬(¬P) \\implies P$."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic3
+msgid ""
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic4
+msgid "Boss Level"
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic4
+msgid ""
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic4
+msgid "If $P, Q$ are logical statements then $(P \\implies Q)$ is equivalent to $(¬P) ∨ Q$."
+msgstr ""
+
+#: Game.Levels.NotLogic.notlogic4
+msgid ""
+msgstr ""
+
+#: Game.Levels.NotLogic
+msgid "Not Logic"
+msgstr ""
+
+#: Game.Levels.NotLogic
+msgid "Lets learn about not."
+msgstr ""
+
 #: Game
 msgid "Dungeons and De Morgan's: The logic Game"
 msgstr ""
@@ -985,7 +1277,12 @@ msgid "## By Chris Birkbeck and Niki Kalaydzhieva\n"
 msgstr ""
 
 #: Game
-msgid ""
+msgid "# Credits\n"
+"\n"
+"Some levels have been shamelessly borrowed from Kevin Buzzard's and Mohammad Pedramfar's\n"
+"Natural Numbers Game\n"
+"as well  as Kevin Buzzard's Formalising mathematics\n"
+"course at Imperial College London."
 msgstr ""
 
 #: Game
