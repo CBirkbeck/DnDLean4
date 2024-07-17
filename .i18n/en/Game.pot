@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Jul 17 14:41:32 2024\n"
+"POT-Creation-Date: Wed Jul 17 16:26:28 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -198,11 +198,11 @@ msgstr ""
 msgid "Let's learn to play the game first!"
 msgstr ""
 
-#: Game.Levels.LogicalStatements.logic0
+#: Game.Levels.LogicalStatements.logic1
 msgid "Apply tactic"
 msgstr ""
 
-#: Game.Levels.LogicalStatements.logic0
+#: Game.Levels.LogicalStatements.logic1
 msgid "## The `apply` tactic\n"
 "\n"
 "If your lemma has the following state:\n"
@@ -226,11 +226,15 @@ msgid "## The `apply` tactic\n"
 "Here's an example we have already done, but try and do it using the `apply` tactic:"
 msgstr ""
 
-#: Game.Levels.LogicalStatements.logic0
+#: Game.Levels.LogicalStatements.logic1
+msgid "Let $P,Q$ be logical statements and $P$ implies $Q$. If $P$ is true, then so is $Q$."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic1
 msgid "Yay!"
 msgstr ""
 
-#: Game.Levels.LogicalStatements.logic0
+#: Game.Levels.LogicalStatements.logic1
 msgid "## The `apply` tactic\n"
 "\n"
 "If your lemma looks like\n"
@@ -251,12 +255,282 @@ msgid "## The `apply` tactic\n"
 "goal, without changing any hypotheses."
 msgstr ""
 
+#: Game.Levels.LogicalStatements.logic2
+msgid "intro tactic"
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic2
+msgid "## The `intro` tactic.\n"
+"\n"
+"If your goal is\n"
+"\n"
+"```\n"
+"⊢ P → Q\n"
+"```\n"
+"\n"
+"meaning we need to prove the `P` implies `Q` then the tactic `intro hp`\n"
+"will take `P` as true with proof `hp` and add `hp : P` to the assumptions. In addition,\n"
+"it turn your goal into `⊢ Q`.\n"
+"\n"
+"In other words the state of the lemma becomes:\n"
+"\n"
+"```\n"
+"hp : P\n"
+"⊢ Q\n"
+"```\n"
+"\n"
+"Lets look at an example that needs the `intro` tactic:"
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic2
+msgid "If $P$ is a logical statement then $P\\implies P$."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic2
+msgid "Yay!"
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic2
+msgid "## The `intro` tactic.\n"
+"If your goal is to prove the implication\n"
+"\n"
+"```\n"
+"⊢ P → Q\n"
+"```\n"
+"\n"
+"then the tactic\n"
+"\n"
+"`intro hP,`\n"
+"\n"
+"will add `hp : P` as an assumption (i.e. `hp` is the proof of `P`) and turn your goal into `⊢ Q`.\n"
+"In other words we get:\n"
+"\n"
+"```\n"
+"hP : P\n"
+"⊢ Q\n"
+"```\n"
+"\n"
+"Tip : `intro` can also be used to introduce\n"
+"more than one assumption at once. Don't forget\n"
+"to name your hypotheses, e.g. `intros hP hQ` if your goal is `P → Q → R`."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic3
+msgid "Logical statements 3"
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic3
+msgid ""
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic3
+msgid "Let $P,Q$ be logical statement and assume $Q$ is true, then $P$ implies $Q$."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic3
+msgid "Why is this true?\n"
+"This works because the implication `P → Q` is true unless `Q` is false and `P` is true. In this case\n"
+"we are given that `Q` is always true, so the implication holds regardless of the truth value of `P`."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic4
+msgid "Logical statements 4"
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic4
+msgid ""
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic4
+msgid "If $P,Q$ are logical statements, then $P$ implies $(Q \\implies P)$."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic4
+msgid "# Caution\n"
+"\n"
+"Note that implies `→` is not associative: in general `P → (Q → R)` and `(P → Q) → R`\n"
+"might not be equivalent. This is like subtraction on numbers -- in general\n"
+"`a - (b - c)` and `(a - b) - c` might not be equal.\n"
+"So if we write `P → Q → R` then we'd better know what this means.\n"
+"The convention in Lean is that it means `P → (Q → R)`. If you think\n"
+"about it, this means that to deduce `R` you will need to prove both `P`\n"
+"and `Q`."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic5
+msgid "Logical statements 5"
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic5
+msgid "If we know `P`, and we also know `P → Q`, we can deduce `Q`.\n"
+"This is called `Modus Ponens` by logicians."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic5
+msgid "If $P$ is true and $P \\implies Q$ is true, then $Q$ is true."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic5
+msgid ""
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic6
+msgid "Logical statements 6"
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic6
+msgid "The goal for this level is to show that implications are transitive.\n"
+"That is, if `P → Q` and `Q → R` are true, then so is `P → R`."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic6
+msgid "If $P,Q,R$ are logical statements and $P \\implies Q$ and $Q \\implies R$ then $P \\implies R$."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic6
+msgid "It might be useful to start by using `intro hPQ hQR hP`."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic6
+msgid ""
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic7
+msgid "Boss level"
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic7
+msgid ""
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic7
+msgid "If $P,Q,R$ are logical statements and\n"
+" $(P \\implies Q \\implies R)$  then $((P \\implies Q) \\implies (P \\implies R)$."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic7
+msgid "Notice we have three implications, so we need to introduce all of them using `intro`."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic7
+msgid "When using `apply` we need to make sure that we use an assumption that contains our goal."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic7
+msgid "If we have more than one goal to prove, then we need to do them in order. By default the lean\n"
+"applies the tactics to the first goal until complete and then moves on to the next."
+msgstr ""
+
+#: Game.Levels.LogicalStatements.logic7
+msgid ""
+msgstr ""
+
 #: Game.Levels.LogicalStatements
-msgid "Logical Statements"
+msgid "Logic"
 msgstr ""
 
 #: Game.Levels.LogicalStatements
 msgid "Lets learn some logic!"
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf1
+msgid "rfl tactic"
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf1
+msgid "##  True and False\n"
+"\n"
+" `Prop` has two special inhabitants, the logical statements `true`,\n"
+"with truth value true and `false` with truth value\n"
+"false.\n"
+"\n"
+"\n"
+"In the following levels we will work with logical statements combining `true` and `false`.\n"
+"\n"
+"To help us we need to introduce a new tactic:\n"
+"\n"
+"## The `rfl` tactic\n"
+"\n"
+"If your lemma has the goal:\n"
+"\n"
+"```\n"
+"⊢ true\n"
+"```\n"
+"\n"
+"then `rfl` will complete the proof for you. Try it out below:"
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf1
+msgid "Yay!"
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf1
+msgid "## The `rfl` tactic\n"
+"The `rfl` tactic can do many things, one of which is the following:\n"
+"\n"
+"If your lemma has the goal:\n"
+"\n"
+"```\n"
+"⊢ true\n"
+"```\n"
+"\n"
+"then `rfl` will complete the proof for you."
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf2
+msgid "true implies true"
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf2
+msgid ""
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf2
+msgid ""
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf3
+msgid "flase implies true"
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf3
+msgid ""
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf3
+msgid ""
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf4
+msgid "flase implies false"
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf4
+msgid ""
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf4
+msgid ""
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf5
+msgid "true implies false implies false"
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf5
+msgid ""
+msgstr ""
+
+#: Game.Levels.TrueAndFalse.tf5
+msgid ""
+msgstr ""
+
+#: Game.Levels.TrueAndFalse
+msgid "True and False"
+msgstr ""
+
+#: Game.Levels.TrueAndFalse
+msgid "Lets learn about trus and false!"
 msgstr ""
 
 #: Game
