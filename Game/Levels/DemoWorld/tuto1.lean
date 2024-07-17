@@ -69,7 +69,7 @@ prove `P`, then typing `exact p`  will prove it.
 
 Try it for yourself now and see what happens! "
 
-Statement example_one (P : Prop) (p : P) : P := by
+Statement (P : Prop) (p : P) : P := by
   Hint "write exact p"
   exact p
 
