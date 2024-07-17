@@ -1,20 +1,33 @@
 import Game.Levels.DemoWorld
 
 -- Here's what we'll put on the title screen
-Title "Hello World Game"
+Title "Dungeons and De Morgan's: The logic Game"
 Introduction
 "
-This text appears on the starting page where one selects the world/level to play.
-You can use markdown.
+# Dungeons and De Morgan's: The logic Game
+
+## By Chris Birkbeck and Niki Kalaydzhieva
+
+Go on a Mathemagical quest to learn some logic!
+
+# What is this game?
+
+This is a game to teach you some mathematical logic using Lean.
+
+Have fun!
+
+
+
+
 "
 
 Info "
-Here you can put additional information about the game. It is accessible
-from the starting through the drop-down menu.
+# Credits
 
-For example: Game version, Credits, Link to Github and Zulip, etc.
-
-Use markdown.
+Some levels have been shamelessly borrowed from Kevin Buzzard's and Mohammad Pedramfar's
+<a href="https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/" target="blank">Natural Numbers Game</a>
+as well  as Kevin Buzzard's <a href="https://www.ma.imperial.ac.uk/~buzzard/xena/formalising-mathematics-2022/" target="blank">Formalising mathematics</a>
+course at Imperial College London.
 "
 
 /-! Information to be displayed on the servers landing page. -/
