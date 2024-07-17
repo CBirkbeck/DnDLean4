@@ -1,6 +1,6 @@
 import Game.Levels.DemoWorld
 
-World "Logical Statements"
+World "LogicalStatements"
 Level 1
 
 Title "Apply tactic"

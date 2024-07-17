@@ -1,6 +1,6 @@
 import Game.Levels.LogicalStatements.logic2
 
-World "Logical Statements"
+World "LogicalStatements"
 Title "Logic"
 
 Introduction "
