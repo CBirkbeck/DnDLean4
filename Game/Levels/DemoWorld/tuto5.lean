@@ -1,7 +1,7 @@
-import Game.Levels.DemoWorld
+import Game.Levels.DemoWorld.tuto4
 
-World "Logical Statements"
-Level 1
+World "Tutorial"
+Level 5
 
 Title "Apply tactic"
 
