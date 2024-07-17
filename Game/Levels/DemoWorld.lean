@@ -1,8 +1,11 @@
 import Game.Levels.DemoWorld.L01_HelloWorld
+import Game.Levels.DemoWorld.tut2
+import Game.Levels.DemoWorld.tut3
+import Game.Levels.DemoWorld.tut4
 
 World "Tutorial"
 Title "Tutorial World"
 
 Introduction "
-This introduction is shown before one enters level 1 of the demo world. Use markdown.
+Let's learn to play the game first!
 "
