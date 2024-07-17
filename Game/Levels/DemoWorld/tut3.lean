@@ -43,7 +43,7 @@ a proof of `Q`.**
 /-
 Let $P,Q$ be logical statements and $P$ implies $Q$. If $P$ is true, then so is $Q$.
 -/
-statement implications_one (P Q : Prop) (h : P → Q) (p : P) : Q := by
+Statement implications_one (P Q : Prop) (h : P → Q) (p : P) : Q := by
   exact h(p)
 
 

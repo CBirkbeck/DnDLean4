@@ -15,7 +15,7 @@ test
 /-Lemma
 If $P,Q$ are logical statements with respective proofs $p,q$, then $Q$ is true.
 -/
-statement example_two (P Q : Prop) (p : P) (q : Q) : Q := by
+Statement example_two (P Q : Prop) (p : P) (q : Q) : Q := by
   exact q
 
 Conclusion "Yay!"

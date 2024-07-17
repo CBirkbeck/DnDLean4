@@ -14,7 +14,7 @@ Now try this!
 Let $P,Q,R$ be logical statements with $P$ implies $Q$ and $Q$ implies $R$. If $P$ is true, then so
 is $R$.
 -/
-statement implications_two (P Q R : Prop) (h1 : P → Q) (h2 : Q → R) (p : P) : R := by
+Statement implications_two (P Q R : Prop) (h1 : P → Q) (h2 : Q → R) (p : P) : R := by
   exact h2 (h1 (p))
 
 
