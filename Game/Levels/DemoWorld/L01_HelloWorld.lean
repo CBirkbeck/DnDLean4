@@ -95,7 +95,7 @@ h : P → Q,
 j : Q → R
 ⊢ R
 ```
-Then you can solve the level by using `exact j(h(p)),`
+Then you can solve the level by using `exact j(h(p))`
 -/
 TacticDoc exact
 
