@@ -33,7 +33,7 @@ Here's an example we have already done, but try and do it using the `apply` tact
 
 "
 
-Statement implications_one_again (P Q : Prop) (h : P → Q) (p : P) : Q := by
+Statement (P Q : Prop) (h : P → Q) (p : P) : Q := by
   apply h
   exact p
 
@@ -68,6 +68,5 @@ The `apply` tactic is useful for *arguing backwards*. It reduces the goal to a p
 goal, without changing any hypotheses.
 -/
 TacticDoc apply
-
 
 NewTactic apply
