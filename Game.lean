@@ -4,6 +4,7 @@ import Game.Levels.TrueAndFalse
 import Game.Levels.AndOr
 import Game.Levels.LogicLaws
 import Game.Levels.NotLogic
+import Game.Levels.DeMorgansLaws
 
 -- Here's what we'll put on the title screen
 Title "Dungeons and De Morgan's: The logic Game"
