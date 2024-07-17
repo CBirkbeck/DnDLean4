@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Jul 17 18:31:58 2024\n"
+"POT-Creation-Date: Wed Jul 17 19:13:41 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -434,7 +434,7 @@ msgid "Lets learn some logic!"
 msgstr ""
 
 #: Game.Levels.TrueAndFalse.tf1
-msgid "rfl tactic"
+msgid "trivial tactic"
 msgstr ""
 
 #: Game.Levels.TrueAndFalse.tf1
@@ -449,7 +449,7 @@ msgid "##  True and False\n"
 "\n"
 "To help us we need to introduce a new tactic:\n"
 "\n"
-"## The `rfl` tactic\n"
+"## The `trivial` tactic\n"
 "\n"
 "If your lemma has the goal:\n"
 "\n"
@@ -457,7 +457,7 @@ msgid "##  True and False\n"
 "⊢ true\n"
 "```\n"
 "\n"
-"then `rfl` will complete the proof for you. Try it out below:"
+"then `trivial` will complete the proof for you. Try it out below:"
 msgstr ""
 
 #: Game.Levels.TrueAndFalse.tf1
@@ -465,8 +465,8 @@ msgid "Yay!"
 msgstr ""
 
 #: Game.Levels.TrueAndFalse.tf1
-msgid "## The `rfl` tactic\n"
-"The `rfl` tactic can do many things, one of which is the following:\n"
+msgid "## The `trivial` tactic\n"
+"The `trivial` tactic can do many things, one of which is the following:\n"
 "\n"
 "If your lemma has the goal:\n"
 "\n"
@@ -474,7 +474,7 @@ msgid "## The `rfl` tactic\n"
 "⊢ true\n"
 "```\n"
 "\n"
-"then `rfl` will complete the proof for you."
+"then `trivial` will complete the proof for you."
 msgstr ""
 
 #: Game.Levels.TrueAndFalse.tf2
@@ -1260,12 +1260,238 @@ msgstr ""
 msgid "Lets learn about not."
 msgstr ""
 
+#: Game.Levels.DeMorgan.demorgan1
+msgid "De Morgan's laws, First Boss"
+msgstr ""
+
+#: Game.Levels.DeMorgan.demorgan1
+msgid "It is time to tackle our final bosses, the *De Morgans laws*. Use your tactics wisely!"
+msgstr ""
+
+#: Game.Levels.DeMorgan.demorgan1
+msgid "If $P,Q$ are logical statements  $¬(P ∨ Q)$ is equivalent to $¬ P ∧ ¬Q$."
+msgstr ""
+
+#: Game.Levels.DeMorgan.demorgan1
+msgid "You can do this only using `constructor`, `intro`, `apply`, `left`, `right`."
+msgstr ""
+
+#: Game.Levels.DeMorgan.demorgan1
+msgid "If you have a goal `¬P` then `intro h` will turn your goal into `false` and give you\n"
+"an extra assumption `h : P`."
+msgstr ""
+
+#: Game.Levels.DeMorgan.demorgan1
+msgid "If you have a goal `false` and an assumption `h : ¬P`, then `apply h` will turn your goal\n"
+"into `P`."
+msgstr ""
+
+#: Game.Levels.DeMorgan.demorgan1
+msgid ""
+msgstr ""
+
+#: Game.Levels.DeMorgan.demorgan2
+msgid "De Morgan's laws, Final Boss"
+msgstr ""
+
+#: Game.Levels.DeMorgan.demorgan2
+msgid "For this final battle with De Morgan, you are on your own!"
+msgstr ""
+
+#: Game.Levels.DeMorgan.demorgan2
+msgid "If $P,Q$ are logical statements then $¬(P ∧ Q)$ is equivalent to $¬ P ∨ ¬Q$."
+msgstr ""
+
+#: Game.Levels.DeMorgan.demorgan2
+msgid ""
+msgstr ""
+
 #: Game.Levels.DeMorgansLaws
 msgid "De Morgan's Laws"
 msgstr ""
 
 #: Game.Levels.DeMorgansLaws
 msgid "Lets learn about De Morgan's laws."
+msgstr ""
+
+#: Game.Levels.MoreTF.nottf2
+msgid "More True and False 1"
+msgstr ""
+
+#: Game.Levels.MoreTF.nottf2
+msgid ""
+msgstr ""
+
+#: Game.Levels.MoreTF.nottf2
+msgid "$¬ \\mathrm{false}$ implies $\\mathrm{true}$."
+msgstr ""
+
+#: Game.Levels.MoreTF.nottf2
+msgid ""
+msgstr ""
+
+#: Game.Levels.MoreTF.nottf
+msgid "More True and False 2"
+msgstr ""
+
+#: Game.Levels.MoreTF.nottf
+msgid ""
+msgstr ""
+
+#: Game.Levels.MoreTF.nottf
+msgid "$¬ \\mathrm{true}$ implies $\\mathrm{false}$."
+msgstr ""
+
+#: Game.Levels.MoreTF.nottf
+msgid ""
+msgstr ""
+
+#: Game.Levels.MoreTF.tf8
+msgid "More True and False 3"
+msgstr ""
+
+#: Game.Levels.MoreTF.tf8
+msgid ""
+msgstr ""
+
+#: Game.Levels.MoreTF.tf8
+msgid "If $P$ is a logical statement then $P$ implies $(P \\implies \\mathrm{false}) \\implies \\mathrm{false}$"
+msgstr ""
+
+#: Game.Levels.MoreTF.tf8
+msgid ""
+msgstr ""
+
+#: Game.Levels.MoreTF.tf9
+msgid "More True and False 4"
+msgstr ""
+
+#: Game.Levels.MoreTF.tf9
+msgid ""
+msgstr ""
+
+#: Game.Levels.MoreTF.tf9
+msgid "If $P, Q$ are logical statements then $P \\implies \\mathrm{false}$ implies $P \\implies Q$."
+msgstr ""
+
+#: Game.Levels.MoreTF.tf9
+msgid ""
+msgstr ""
+
+#: Game.Levels.MoreTF.tf10
+msgid "More True and False 5"
+msgstr ""
+
+#: Game.Levels.MoreTF.tf10
+msgid ""
+msgstr ""
+
+#: Game.Levels.MoreTF.tf10
+msgid "For any logical statement $P$, $(\\mathrm{true} \\implies \\mathrm{false})$ implies $P$."
+msgstr ""
+
+#: Game.Levels.MoreTF.tf10
+msgid ""
+msgstr ""
+
+#: Game.Levels.MoreTrueAndFalse
+msgid "More True and False"
+msgstr ""
+
+#: Game.Levels.MoreTrueAndFalse
+msgid "Lets learn about more true and false!"
+msgstr ""
+
+#: Game.Levels.Bonus.logic8
+msgid "Bonus 1"
+msgstr ""
+
+#: Game.Levels.Bonus.logic8
+msgid "If you're sad that the game is over, here is some bonus content to keep you going."
+msgstr ""
+
+#: Game.Levels.Bonus.logic8
+msgid "A long chain of implications."
+msgstr ""
+
+#: Game.Levels.Bonus.logic9
+msgid "Bonus 2"
+msgstr ""
+
+#: Game.Levels.Bonus.logic9
+msgid "If you're sad that the game is over, here is some bonus content to keep you going."
+msgstr ""
+
+#: Game.Levels.Bonus.logic9
+msgid "A nested chain ofimplications."
+msgstr ""
+
+#: Game.Levels.Bonus.logic10
+msgid "Bonus 3"
+msgstr ""
+
+#: Game.Levels.Bonus.logic10
+msgid "If you're sad that the game is over, here is some bonus content to keep you going."
+msgstr ""
+
+#: Game.Levels.Bonus.logic10
+msgid "An even more nested implications"
+msgstr ""
+
+#: Game.Levels.Bonus.logic11
+msgid "Bonus 4"
+msgstr ""
+
+#: Game.Levels.Bonus.logic11
+msgid "If you're sad that the game is over, here is some bonus content to keep you going."
+msgstr ""
+
+#: Game.Levels.Bonus.logic11
+msgid "This is getting silly now!"
+msgstr ""
+
+#: Game.Levels.Bonus.logic12
+msgid "Bonus 5"
+msgstr ""
+
+#: Game.Levels.Bonus.logic12
+msgid "If you're sad that the game is over, here is some bonus content to keep you going."
+msgstr ""
+
+#: Game.Levels.Bonus.logic12
+msgid "Are we there yet?"
+msgstr ""
+
+#: Game.Levels.Bonus.logic13
+msgid "Bonus Boss"
+msgstr ""
+
+#: Game.Levels.Bonus.logic13
+msgid "If you're sad that the game is over, here is some bonus content to keep you going."
+msgstr ""
+
+#: Game.Levels.Bonus.logic13
+msgid "Time for another boss fight!"
+msgstr ""
+
+#: Game.Levels.Bonus.logic14
+msgid "Bonus Boss 2"
+msgstr ""
+
+#: Game.Levels.Bonus.logic14
+msgid "If you're sad that the game is over, here is some bonus content to keep you going."
+msgstr ""
+
+#: Game.Levels.Bonus.logic14
+msgid "Time for a super boss fight!"
+msgstr ""
+
+#: Game.Levels.Bonus
+msgid "Bonus world"
+msgstr ""
+
+#: Game.Levels.Bonus
+msgid "Here is some bonus content to keep you going."
 msgstr ""
 
 #: Game

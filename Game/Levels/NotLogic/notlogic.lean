@@ -76,3 +76,5 @@ turn the first `Q` in your goal to `P` then use `rw [←h]`. (To get the `←` a
 TacticDoc rw
 
 NewTactic rw
+
+NewTheorem not_iff_imp_false

@@ -1,4 +1,4 @@
-import Game.Levels.NotLogic.notlogic4
+import Game.Levels.DeMorgan.demorgan2
 
 World "DeMorgansLaws"
 Title "De Morgan's Laws"

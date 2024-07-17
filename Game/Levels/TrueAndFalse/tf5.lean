@@ -13,10 +13,10 @@ Introduction
 /-
 The goal is to prove that `true → false` implies `false`.
 -/
-Statement : (true → false) → false := by
+Statement : (True → False) → False := by
   intro t
   apply t
-  rfl
+  trivial
 
 
 

@@ -13,7 +13,7 @@ Introduction
 /-
 The goal is to prove that `false` implies `true`.
 -/
-Statement : false → false := by
+Statement : False → False := by
   intro t
   exact t
 

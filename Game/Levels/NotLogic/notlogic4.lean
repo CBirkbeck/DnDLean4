@@ -24,7 +24,7 @@ Statement (P Q : Prop) : (P → Q) ↔ ¬ P ∨ Q := by
   left
   exact p
   intro h1 h2
-  cases h1
+  rcases h1
   exfalso
   apply P_not_P_false P
   constructor

@@ -13,9 +13,9 @@ Introduction
 /-
 The goal is to prove that `true` implies `true`.
 -/
-Statement : true → true := by
+Statement : True → True := by
   intro t
-  rfl
+  trivial
 
 
 

@@ -4,7 +4,7 @@ import Game.Levels.LogicalStatements
 World "TrueAndFalse"
 Level 1
 
-Title "rfl tactic"
+Title "trivial tactic"
 
 Introduction
 "
@@ -19,7 +19,7 @@ In the following levels we will work with logical statements combining `true` an
 
 To help us we need to introduce a new tactic:
 
-## The `rfl` tactic
+## The `trivial` tactic
 
 If your lemma has the goal:
 
@@ -27,15 +27,15 @@ If your lemma has the goal:
 ⊢ true
 ```
 
-then `rfl` will complete the proof for you. Try it out below:
+then `trivial` will complete the proof for you. Try it out below:
 
 "
 
 /-
 The logical statement `true` is true.
 -/
-Statement : true  := by
-  rfl
+Statement : True  := by
+  trivial
 
 
 
@@ -52,8 +52,8 @@ Conclusion "Yay!"
 /--
 
 
-## The `rfl` tactic
-The `rfl` tactic can do many things, one of which is the following:
+## The `trivial` tactic
+The `trivial` tactic can do many things, one of which is the following:
 
 If your lemma has the goal:
 
@@ -61,9 +61,9 @@ If your lemma has the goal:
 ⊢ true
 ```
 
-then `rfl` will complete the proof for you.
+then `trivial` will complete the proof for you.
 -/
-TacticDoc rfl
+TacticDoc trivial
 
 
-NewTactic rfl
+NewTactic trivial

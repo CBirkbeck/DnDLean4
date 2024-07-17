@@ -25,12 +25,10 @@ Statement DeMorgan_two (P Q : Prop) :  ¬ (P ∧ Q) ↔ ¬ P ∨ ¬ Q :=by
       exact ⟨hP, hQ⟩ }
     { left
       exact hP } }
-  { rintro (hnP | hnQ) ⟨hP, hQ⟩
-    { apply contra P False
-      constructor
-      exact hP
-      exact hnP }
-    { apply hnQ; exact hQ } }
+  { intro (hnP) ⟨hP, hQ⟩
+    rcases hnP with (hnP | hnQ)
+    { exact hnP hP }
+    { exact hnQ hQ } }
 
 
 
