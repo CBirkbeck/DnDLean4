@@ -78,7 +78,7 @@ Conclusion "Yay!"
 
 /- Use these commands to add items to the game's inventory. -/
 
-NewTactic exact
+
 -- NewTheorem Nat.add_comm Nat.add_assoc
 -- NewDefinition Nat Add Eq
 
@@ -98,3 +98,6 @@ j : Q → R
 Then you can solve the level by using `exact j(h(p)),`
 -/
 TacticDoc exact
+
+
+NewTactic exact
