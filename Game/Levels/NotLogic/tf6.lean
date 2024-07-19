@@ -13,7 +13,7 @@ In this level we want to prove prove that `false` implies any proposition `P`.
 /--
 If $P$ is a logical statement then $\mathrm{false}$ implies $P$.
 -/
-Statement (P : Prop) : false → P := by
+Statement (P : Prop) : False → P := by
  intro h
  rcases h
 
