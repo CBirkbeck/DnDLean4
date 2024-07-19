@@ -12,11 +12,9 @@ Introduction
 In this level we will see why proofs by contradiction are valid. The key is to note that for any
 logical statements `P,Q`, we have that ` P ∧ (¬ P) → Q` is true.
 
--/
+Why is this true?
+We have just seen that `P ∧ (¬ P)`is always false and `False → Q` is always true.
 
-/-Hint : Why is this true?
-We have just seen that `P ∧ (¬ P)`is always false and `false → Q` is always true.
--/
 
 
 
