@@ -44,8 +44,7 @@ series of manipulations which we call *tactics*.
 
 Lets start with a simple example of how a lemma looks like in Lean.
 
-This is where the window on the right will come into play. If you delete the *sorry* below,
-on the right you will see the following state:
+If you look below you will see something like this:
 
 ```
 P : Prop
@@ -65,7 +64,6 @@ The first tactic we will use is called *exact*. It is used when you need to prov
 statement $P$ and you have the proof of it. In the example above we have `p : P` and we need to
 prove `P`, then typing `exact p`  will prove it.
 
-**Note:  We end each line with a comma `,` to tell Lean that this is the end of our move.**
 
 Try it for yourself now and see what happens! "
 
