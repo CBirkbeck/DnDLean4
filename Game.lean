@@ -24,7 +24,7 @@ This is a game to teach you some mathematical logic using Lean.
 
 Have fun!
 
-
+Leaderboard:  Me    time: 500hrs
 
 
 "

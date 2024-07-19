@@ -55,7 +55,7 @@ p : P
 Here, the first two lines are our assumptions, where the first line `P : Prop` says $P$ is a
 logical statement and the second line `p : P` says `p` is the proof of `P`.
 
-The thing after the `⊢` symbol is what we need to prove to win the level (i.e. prove the lemma).
+The Goal  ( which we represent with the `⊢` symbol) is what we need to prove to win the level (i.e. prove the lemma).
 
 In this game our moves or, as we call them in Lean, *tactics*, are what will allow us to
 manipulate our statements and produce proofs.
@@ -72,7 +72,7 @@ Statement (P : Prop) (p : P) : P := by
   exact p
 
 
-Conclusion "Yay!"
+Conclusion "GG EZ"
 
 /- Use these commands to add items to the game's inventory. -/
 
