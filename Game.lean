@@ -32,17 +32,6 @@ Leaderboard:
 | Chris B | 168hrs  |
 ```
 
-```
-|  Name   | Time    |
-| --------|---------|
-| Chris B | 168hrs  |
-```
-
-|  Name   | Time    |
-| --------|---------|
-| Chris B | 168hrs  |
-
-
 "
 
 Info "
