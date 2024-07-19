@@ -27,12 +27,20 @@ Have fun!
 Leaderboard:
 
 ```md
-|  Name     | Time    |
+|  Name   | Time    |
 | --------|---------|
-| Chris B | 168hrs   |
-
+| Chris B | 168hrs  |
 ```
 
+```
+|  Name   | Time    |
+| --------|---------|
+| Chris B | 168hrs  |
+```
+
+|  Name   | Time    |
+| --------|---------|
+| Chris B | 168hrs  |
 
 
 "
