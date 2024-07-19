@@ -24,7 +24,15 @@ This is a game to teach you some mathematical logic using Lean.
 
 Have fun!
 
-Leaderboard:  Me    time: 500hrs
+Leaderboard:
+
+```md
+|  Name     | Time    |
+| --------|---------|
+| Chris B | 168hrs   |
+
+```
+
 
 
 "
